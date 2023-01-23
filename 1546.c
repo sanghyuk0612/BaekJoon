@@ -18,10 +18,9 @@ int main(void) {
     }
 
     for (int i = 0; i < n; i++) {
-
-        avg = avg + (score[i] / max) * 100;
+        avg += (float)score[i] / max * 100;
     }
-    avg = avg / n;
-    printf("%f", avg);
+
+    printf("%f\n", avg / n);
     return 0;
 }
