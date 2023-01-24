@@ -19,7 +19,7 @@ int main(void) {
             if (score[j] < avg) {
                 cnt++;
             }
-            printf("%f", cnt / j);
+            printf("%.3f&%", cnt / j);
         }
     
     }
