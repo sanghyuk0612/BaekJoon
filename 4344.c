@@ -16,7 +16,7 @@ int main(void) {
             scanf("%d", &score[j]);
             avg += score[j];
         }
-        avg = avg / n;
+        avg = avg / s;
         for (int j = 0; j < s; j++) {
             if (score[j] > avg) {
                 cnt++;
@@ -24,7 +24,7 @@ int main(void) {
 
         }
         answer = (float)cnt / s;
-        printf("%0.3f%%", answer);
+        printf("%0.3f%%", answer * 100);
 
     }
     return 0;
