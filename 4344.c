@@ -3,12 +3,14 @@
 int main(void) {
     int n;
     int s;
-    int cnt=0;
-    float avg;
+
+    float avg = 0;
+    float answer;
     scanf("%d", &n);
 
     int score[1000];
     for (int i = 0; i < n; i++) {
+        int cnt = 0;
         scanf("%d", &s);
         for (int j = 0; j < s; j++) {
             scanf("%d", &score[j]);
@@ -16,13 +18,14 @@ int main(void) {
         }
         avg = avg / n;
         for (int j = 0; j < s; j++) {
-            if (score[j] < avg) {
+            if (score[j] > avg) {
                 cnt++;
             }
-            
+
         }
-        printf("%.3f&%", cnt / j);
-    
+        answer = (float)cnt / s;
+        printf("%0.3f%%", answer);
+
     }
     return 0;
 }
