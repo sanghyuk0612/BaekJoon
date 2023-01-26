@@ -4,13 +4,14 @@ int main(void) {
     int n;
     int s;
 
-    float avg = 0;
+
     float answer;
     scanf("%d", &n);
 
     int score[1000];
     for (int i = 0; i < n; i++) {
         int cnt = 0;
+        float avg = 0;
         scanf("%d", &s);
         for (int j = 0; j < s; j++) {
             scanf("%d", &score[j]);
@@ -24,7 +25,7 @@ int main(void) {
 
         }
         answer = (float)cnt / s;
-        printf("%0.3f%%", answer * 100);
+        printf("%0.3f%%\n", answer * 100);
 
     }
     return 0;
